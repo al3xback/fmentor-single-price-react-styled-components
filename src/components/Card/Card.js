@@ -10,74 +10,74 @@ const CardShell = styled.div`
 	box-shadow: 0 1.1428571429em 2.1428571429em rgba(0, 0, 0, 0.04);
 	overflow: hidden;
 
-	.card__group,
-	.card__block {
+	& .card__group,
+	& .card__block {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.card__block {
+	& .card__block {
 		padding: 1.8571428571em 1.7142857143em;
 	}
 
-	h2.card__title {
+	& h2.card__title {
 		margin-bottom: 1em;
 	}
 
-	.card__mark {
+	& .card__mark {
 		margin-bottom: 1.0666666667em;
 		line-height: 1.3;
 	}
 
-	.card__block--monthly-subsription,
-	.card__block--why-us {
+	& .card__block--monthly-subsription,
+	& .card__block--why-us {
 		color: hsl(204, 43%, 93%);
 	}
 
-	.card__block--monthly-subsription {
+	& .card__block--monthly-subsription {
 		background-color: hsl(179, 62%, 43%);
 	}
 
-	.card__block--why-us {
+	& .card__block--why-us {
 		background-color: hsl(179, 47%, 52%);
 	}
 
-	h3.card__title {
+	& h3.card__title {
 		margin-bottom: 1em;
 		color: inherit;
 	}
 
-	.card__price {
+	& .card__price {
 		display: flex;
 		align-items: center;
 		margin-top: -0.4285714286em;
 		font-size: 1.1428571429em;
 	}
 
-	.card__price .num {
+	& .card__price .num {
 		margin-right: 0.3870967742em;
 		font-size: 1.9375em;
 		font-weight: 700;
 	}
 
-	.card__price .label {
+	& .card__price .label {
 		color: hsla(204, 43%, 93%, 0.75);
 	}
 
-	.card__block--monthly-subsription .card__desc {
+	& .card__block--monthly-subsription .card__desc {
 		margin-bottom: 1.8666666667em;
 		font-size: 1.0714285714em;
 	}
 
-	.card__block .btn {
+	& .card__block .btn {
 		font-size: 1.1428571429em;
 	}
 
-	.card__list {
+	& .card__list {
 		line-height: 1.4;
 	}
 
-	.card__list li + li {
+	& .card__list li + li {
 		margin-top: 0.2142857143em;
 	}
 
@@ -86,23 +86,23 @@ const CardShell = styled.div`
 			max-width: 45.7142857143em;
 		}
 
-		.card__block {
+		& .card__block {
 			padding: 2.7142857143em 2.8571428571em;
 		}
 
-		h2.card__title {
+		& h2.card__title {
 			font-size: 1.7142857143em;
 		}
 
-		.card__mark {
+		& .card__mark {
 			font-size: 1.2857142857em;
 		}
 
-		.card__group {
+		& .card__group {
 			flex-direction: row;
 		}
 
-		.card__group .card__block {
+		& .card__group .card__block {
 			width: 50%;
 		}
 	}
