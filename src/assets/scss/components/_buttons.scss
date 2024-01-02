@@ -4,14 +4,15 @@
 .btn {
 	display: inline-flex;
 	padding: func.em(12, var.$font-size-primary);
+	background-color: var.$color-white;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	box-shadow: 0rem 0.5em 1.125em rgba(0, 0, 0, 0.2);
-	font-size: 1em;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 	text-decoration: none;
+	color: inherit;
 	line-height: 1.24;
-	user-select: none;
-	transition: all 0.4s;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
 }
 
 .btn--primary {
