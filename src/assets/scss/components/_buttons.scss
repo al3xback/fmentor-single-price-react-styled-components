@@ -30,8 +30,13 @@
 
 .btn--link {
 	padding: 0;
+	background-color: transparent;
 	box-shadow: none;
 	color: var.$color-cyan;
+}
+
+.btn--link:hover {
+	text-decoration: underline;
 }
 
 .btn--full {
