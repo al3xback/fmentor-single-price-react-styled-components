@@ -7,11 +7,12 @@ const CardShell = styled.div`
 	margin: 2.8571428571em 0 4.2857142857em;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 8px;
-	box-shadow: 0 1.1428571429em 2.1428571429em rgba(0, 0, 0, 0.04);
+	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
 	overflow: hidden;
 
 	& .card__group,
-	& .card__block {
+	& .card__block,
+	& .card__list {
 		display: flex;
 		flex-direction: column;
 	}
@@ -24,8 +25,12 @@ const CardShell = styled.div`
 		margin-bottom: 1em;
 	}
 
-	& .card__mark {
+	& .card__subtitle {
+		background-color: transparent;
 		margin-bottom: 1.0666666667em;
+		font-size: 1.0714285714em;
+		font-weight: 700;
+		color: hsl(71, 73%, 54%);
 		line-height: 1.3;
 	}
 
@@ -74,11 +79,8 @@ const CardShell = styled.div`
 	}
 
 	& .card__list {
+		gap: 0.2142857143em;
 		line-height: 1.4;
-	}
-
-	& .card__list li + li {
-		margin-top: 0.2142857143em;
 	}
 
 	@media (min-width: 48em) {
@@ -94,7 +96,7 @@ const CardShell = styled.div`
 			font-size: 1.7142857143em;
 		}
 
-		& .card__mark {
+		& .card__subtitle {
 			font-size: 1.2857142857em;
 		}
 
@@ -113,9 +115,9 @@ const Card = () => {
 		<CardShell>
 			<section className="card__block card__block--join-community">
 				<h2 className="card__title">Join our community</h2>
-				<mark className="card__mark">
+				<p className="card__subtitle">
 					30-day, hassle-free money back guarantee
-				</mark>
+				</p>
 				<p className="card__desc">
 					Gain access to our full library of tutorials along with
 					expert code reviews. Perfect for any developers who are
