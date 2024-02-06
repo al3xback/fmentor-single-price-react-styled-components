@@ -4,7 +4,7 @@ const CardShell = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin: 2.8571428571em 0 4.2857142857em;
+	margin: 2.14285em 0 4.2857142857em;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 8px;
 	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
