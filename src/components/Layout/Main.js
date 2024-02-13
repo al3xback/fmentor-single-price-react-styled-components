@@ -9,9 +9,11 @@ const MainShell = styled.main`
 		flex: auto;
 	}
 
-	& > .container {
-		justify-content: center;
-		align-items: center;
+	@media (min-width: 48em) {
+		& > .container {
+			justify-content: center;
+			align-items: center;
+		}
 	}
 `;
 
