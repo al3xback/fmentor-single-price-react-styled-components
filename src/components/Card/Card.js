@@ -4,10 +4,10 @@ const CardShell = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin: 2.14285em 0 4.2857142857em;
 	background-color: hsl(0, 0%, 100%);
+	margin: 1.875em 0 3.75em;
 	border-radius: 8px;
-	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
+	box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 
 	& .card__group,
@@ -18,20 +18,7 @@ const CardShell = styled.div`
 	}
 
 	& .card__block {
-		padding: 1.8571428571em 1.7142857143em;
-	}
-
-	& h2.card__title {
-		margin-bottom: 1em;
-	}
-
-	& .card__subtitle {
-		background-color: transparent;
-		margin-bottom: 1.0666666667em;
-		font-size: 1.0714285714em;
-		font-weight: 700;
-		color: hsl(71, 73%, 54%);
-		line-height: 1.3;
+		padding: 1.625em 1.5em;
 	}
 
 	& .card__block--monthly-subsription,
@@ -47,7 +34,22 @@ const CardShell = styled.div`
 		background-color: hsl(179, 47%, 52%);
 	}
 
-	& h3.card__title {
+	& .card__title {
+		margin-bottom: 0.95em;
+	}
+
+	& .card__subtitle {
+		margin-bottom: 0.75em;
+		font-weight: 700;
+		color: hsl(71, 73%, 54%);
+		line-height: 1.5;
+	}
+
+	& .card__block--join-community .card__desc {
+		font-size: 0.9375em;
+	}
+
+	& .card__group .card__title {
 		margin-bottom: 1em;
 		color: inherit;
 	}
@@ -55,8 +57,7 @@ const CardShell = styled.div`
 	& .card__price {
 		display: flex;
 		align-items: center;
-		margin-top: -0.4285714286em;
-		font-size: 1.1428571429em;
+		margin-top: -0.375em;
 	}
 
 	& .card__price .num {
@@ -70,34 +71,34 @@ const CardShell = styled.div`
 	}
 
 	& .card__block--monthly-subsription .card__desc {
-		margin-bottom: 1.8666666667em;
-		font-size: 1.0714285714em;
-	}
-
-	& .card__block .btn {
-		font-size: 1.1428571429em;
+		margin-bottom: 1.875em;
 	}
 
 	& .card__list {
-		gap: 0.2142857143em;
+		gap: 0.1875em;
+		font-size: 0.875em;
 		line-height: 1.4;
 	}
 
 	@media (min-width: 48em) {
 		& {
-			max-width: 45.7142857143em;
+			max-width: 40em;
 		}
 
 		& .card__block {
-			padding: 2.7142857143em 2.8571428571em;
+			padding: 2.375em 2.5em;
 		}
 
 		& h2.card__title {
-			font-size: 1.7142857143em;
+			font-size: 1.5em;
 		}
 
 		& .card__subtitle {
-			font-size: 1.2857142857em;
+			font-size: 1.125em;
+		}
+
+		& .card__block--join-community .card__desc {
+			font-size: inherit;
 		}
 
 		& .card__group {
